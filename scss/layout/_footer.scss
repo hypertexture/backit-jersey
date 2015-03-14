@@ -1,0 +1,40 @@
+/* ==================================================
+   Footer
+================================================== */
+
+footer {
+
+	@include breakpoint (0px 640px) {
+		text-align: center;
+	}
+
+	.credits {
+	color: #FFFFFF;
+	font-size: 16px;
+	margin: 0;	
+	@include span (9);
+
+		@include breakpoint (0px 640px) {
+			@include span (12);
+			
+		}
+	}
+
+	.logo-footer {
+		@include span (3);
+		@include breakpoint (0px 640px) {
+			@include span (12);
+		}
+	}
+
+	img {
+		width: 100%;
+		height: auto;
+	}
+} 
+
+
+
+.footer {
+	@include container (60em);
+}

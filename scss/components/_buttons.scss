@@ -1,0 +1,66 @@
+/* ==================================================
+   Buttons
+================================================== */
+
+.button {
+  	display: inline-block;
+  	margin-bottom: 0;
+  	padding: 13px 26px;
+    border: 2px solid $orange;
+  	background: transparent;
+  	color: $orange;
+  	vertical-align: middle;
+  	text-align: center;
+  	font-weight:500;
+  	font-size: 16px;
+  	cursor: pointer;
+    transition: all 0.1s linear;
+  	*border: 0;
+  	*zoom: 1; 
+}
+
+.btn-white {
+  border: 2px solid #fff;
+  color: #fff;
+
+    &:hover {
+      background: #fff!important;
+      color:$orange !important;
+    }
+  }
+
+/*--- Hover/Active/Focus State ---*/
+
+.button:hover,
+.button:active,
+.button:focus {
+	background: $orange;
+	color:#FFFFFF;
+}
+
+/* --- Button Sizes --- */
+
+.button.button-large {
+  	padding: 16px 30px;
+  	font-size: 18px;
+}
+
+.button.button-small {
+  	padding: 8px 18px;
+  	font-size: 14px;
+}
+
+.button.button-mini {
+  	padding: 4px 12px;
+  	font-size: 12px;
+}
+
+.button.button-block {
+	padding-right: 0;
+	padding-left: 0;
+	width: 100%;	
+}
+
+.button + .button {
+	margin-left: 10px;	
+}

@@ -1,0 +1,54 @@
+/* ==================================================
+   Typography
+================================================== */
+@import url(http://fonts.googleapis.com/css?family=Open+Sans:400,400italic,600,600italic,300italic,300,700,700italic);
+
+@font-face {
+    font-family: 'museo_slab500';
+    src: url('../fonts/Museo_Slab_500_2-webfont.eot');
+    src: url('../fonts/Museo_Slab_500_2-webfont.eot?#iefix') format('embedded-opentype'),
+         url('../fonts/Museo_Slab_500_2-webfont.woff2') format('woff2'),
+         url('../fonts/Museo_Slab_500_2-webfont.woff') format('woff'),
+         url('../fonts/Museo_Slab_500_2-webfont.ttf') format('truetype'),
+         url('../fonts/Museo_Slab_500_2-webfont.svg#museo_slab500') format('svg');
+    font-weight: normal;
+    font-style: normal;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6{
+	margin:0 0 20px;
+	color:#fff;
+	font-family: $font-family-serif;
+	font-weight: normal; 
+	font-style: normal; 
+	line-height:1.5em;
+}
+
+h1{
+	font-size:$font-size-h1;
+}
+
+h2{
+	font-size:$font-size-h2;
+}
+
+h3{
+	font-size:$font-size-h3;
+}
+
+h4{
+	font-size:$font-size-h4;
+}
+
+h5{
+	font-size:$font-size-h5;
+}
+
+h6{
+	font-size:$font-size-h6;
+}

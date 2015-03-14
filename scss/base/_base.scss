@@ -1,0 +1,60 @@
+/* ==================================================
+   Basic Styles
+================================================== */
+
+html, body {
+	height: 100%;
+}
+
+body{
+	background:#fff;
+	color: $gray;
+	font-size:16px;
+	font-family: 'Lato', sans-serif;
+	line-height:28px;
+}
+
+
+a{
+	color:#DE5E60;
+	text-decoration: none;
+	cursor: pointer;
+	transition: color 0.1s linear 0s;
+}
+
+a:hover,
+a:active,
+a:focus{
+	outline: 0;
+	color:#FFFFFF;
+	text-decoration:none;
+}
+
+a img {
+	border: none;
+}
+
+a > img {
+	vertical-align: bottom;	
+}
+
+img {
+	max-width: none;	
+}
+
+strong {
+  	font-weight: 500;
+}
+
+p {
+	margin: 0 0 30px;
+}
+
+hr {
+	border-style: solid;
+	border-color: $gray-light;
+	border-bottom: none;
+	border-left: none;
+	border-right: none;
+	margin: 50px 0;	
+}
