@@ -16,7 +16,7 @@ body{
 
 
 a{
-	color:#DE5E60;
+	color: $brand-primary;
 	text-decoration: none;
 	cursor: pointer;
 	transition: color 0.1s linear 0s;
@@ -26,7 +26,7 @@ a:hover,
 a:active,
 a:focus{
 	outline: 0;
-	color:#FFFFFF;
+	color:$brand-link-hover;
 	text-decoration:none;
 }
 
