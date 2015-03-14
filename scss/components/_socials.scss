@@ -1,0 +1,184 @@
+/* ==================================================
+   Social Area
+================================================== */
+
+#social-area {
+    text-align: center;
+
+}
+
+#social-area #social ul {
+  margin: 0;
+  padding: 0;
+}
+
+#social-area #social ul li {
+  display: inline-block;
+  margin-left: 30px;
+  list-style: none;
+  cursor: pointer;
+}
+
+#social-area #social ul li:first-child {
+  margin-left: 0;
+}
+
+#social ul li a {
+  display: block;
+  width: 70px;
+  height: 70px;
+  -webkit-border-radius: 100%;
+  -moz-border-radius: 100%;
+  border-radius: 100%;
+  background-color: $brand-primary;
+  
+  -webkit-transition: all 400ms ease-out 0s;  
+     -moz-transition: all 400ms ease-out 0s;
+     -o-transition: all 400ms ease-out 0s;
+        transition: all 400ms ease-out 0s;
+  
+  -webkit-transform: rotateY(180deg);
+     -moz-transform: rotateY(180deg);
+    -ms-transform: rotateY(180deg);
+     -o-transform: rotateY(180deg);
+      transform: rotateY(180deg);
+}
+
+#social ul li a span {
+  display: inline-block;
+  margin: 0;
+  color: #ffffff;
+  font-size: 32px;
+  line-height: 70px;
+
+  filter: alpha(opacity=30);
+  
+  -webkit-transition: all 400ms ease-out 0s;  
+     -moz-transition: all 400ms ease-out 0s;
+     -o-transition: all 400ms ease-out 0s;
+        transition: all 400ms ease-out 0s;
+      
+  -webkit-transform: rotateY(180deg);
+     -moz-transform: rotateY(180deg);
+    -ms-transform: rotateY(180deg);
+     -o-transform: rotateY(180deg);
+      transform: rotateY(180deg);
+}
+
+#social ul li:hover a,
+#social ul li.active a {
+  background-color: #ffffff;  
+  
+  -webkit-transform: rotateY(0deg);
+     -moz-transform: rotateY(0deg);
+    -ms-transform: rotateY(0deg);
+     -o-transform: rotateY(0deg);
+        transform: rotateY(0deg);
+}
+
+#social ul li:hover a span,
+#social ul li.active a span {
+  color: $brand-primary;
+  opacity: 1;
+  filter: alpha(opacity=100);
+  
+  -webkit-transform: rotateY(0deg);
+     -moz-transform: rotateY(0deg);
+    -ms-transform: rotateY(0deg);
+     -o-transform: rotateY(0deg);
+      transform: rotateY(0deg);
+}
+
+
+
+/* ==================================================
+   Social Area In footer
+================================================== */
+
+#social-area-pages {
+    text-align: center;
+    margin-top: 15px;
+
+}
+
+#social-area-pages #social-pages ul {
+  margin: 0;
+  padding: 0;
+}
+
+#social-area-pages #social-pages ul li {
+  display: inline-block;
+  margin-left: 10px;
+  list-style: none;
+  cursor: pointer;
+}
+
+#social-area-pages #social-pages ul li:first-child {
+  margin-left: 0;
+}
+
+#social-pages ul li a {
+  display: block;
+  width: 40px;
+  height: 40px;
+  -webkit-border-radius: 100%;
+  -moz-border-radius: 100%;
+  border-radius: 100%;
+  background-color: $brand-primary;
+  
+  -webkit-transition: all 400ms ease-out 0s;  
+     -moz-transition: all 400ms ease-out 0s;
+     -o-transition: all 400ms ease-out 0s;
+        transition: all 400ms ease-out 0s;
+  
+  -webkit-transform: rotateY(180deg);
+     -moz-transform: rotateY(180deg);
+    -ms-transform: rotateY(180deg);
+     -o-transform: rotateY(180deg);
+      transform: rotateY(180deg);
+}
+
+#social-pages ul li a span {
+  display: inline-block;
+  margin: 0;
+  color: #ffffff;
+  font-size: 20px;
+  line-height: 42px;
+
+  filter: alpha(opacity=30);
+  
+  -webkit-transition: all 400ms ease-out 0s;  
+     -moz-transition: all 400ms ease-out 0s;
+     -o-transition: all 400ms ease-out 0s;
+        transition: all 400ms ease-out 0s;
+      
+  -webkit-transform: rotateY(180deg);
+     -moz-transform: rotateY(180deg);
+    -ms-transform: rotateY(180deg);
+     -o-transform: rotateY(180deg);
+      transform: rotateY(180deg);
+}
+
+#social-pages ul li:hover a,
+#social-pages ul li.active a {
+  background-color: #ffffff;  
+  
+  -webkit-transform: rotateY(0deg);
+     -moz-transform: rotateY(0deg);
+    -ms-transform: rotateY(0deg);
+     -o-transform: rotateY(0deg);
+        transform: rotateY(0deg);
+}
+
+#social-pages ul li:hover a span,
+#social-pages ul li.active a span {
+  color: $brand-primary;
+  opacity: 1;
+  filter: alpha(opacity=100);
+  
+  -webkit-transform: rotateY(0deg);
+     -moz-transform: rotateY(0deg);
+    -ms-transform: rotateY(0deg);
+     -o-transform: rotateY(0deg);
+      transform: rotateY(0deg);
+}

@@ -8,15 +8,22 @@ $susy: (
 	gutters: 1/4,
 	math: fluid,
 	output : float,
-	gutter-position : inside,
+	gutter-position : split
 
 );
 
+.container {
+	@include container (60em);
+}
 // main sections styles for all sections
 .section {
 	@include span (12);
 	padding: 50px 15px;
 	box-sizing:border-box;
+	margin-right: 0;
+	margin-left: 0;
+	width: 100%;
+
 }
 
 //backgrounds for each section
@@ -98,33 +105,37 @@ $susy: (
 	}
 }
 
+@include breakpoint (500px) {
+
+	.project-img {
+		background: $brand-gray;
+		@include span (7);
+	}
+
+	.project-funding {
+		background: $brand-gray;
+		@include span (5);
+	}
+
+	.project-description {
+		background: $brand-gray;
+		@include span (7);
+	}
+
+	.project-backit {
+		background: $brand-gray;
+		@include span (5);
+	}
+
+
+
+}
 
 
 // Containers for each section
-#about {
-	@include container (60em);
-}
-
-#services {
-	@include container (60em);
-
-	svg {
-		padding: 17px;
-	}
-}
-
-#projects {
-	@include container (60em);
-	.title {
-		font-size: 47px;
-		@include breakpoint (0px 640px) {
-			font-size: 27px;
-
-		}
-	}
-}
-
-.home {
+#how-it-works,
+#projects,
+#footer {
 	@include container (60em);
 }
 

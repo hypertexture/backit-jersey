@@ -34,8 +34,9 @@
 .button:hover,
 .button:active,
 .button:focus {
-	background: $orange;
-	color:#FFFFFF;
+	background: $brand-secondary;
+	color: $brand-primary;
+  border: 2px solid $brand-primary;
 }
 
 /* --- Button Sizes --- */
@@ -64,3 +65,18 @@
 .button + .button {
 	margin-left: 10px;	
 }
+
+
+
+
+
+
+.backit-button {
+  background: $brand-gray;
+  border: 1px solid  $brand-primary;
+  border-bottom: 5px solid  $brand-primary;
+  text-align: center;
+  padding: 50px;
+  margin: 50px;
+} 
+
