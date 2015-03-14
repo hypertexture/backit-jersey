@@ -49,9 +49,9 @@
             <!-- Navbar-->
             <nav id='cssmenu'>
                <ul>
-                  <li class="active"><a href="index.html">How it works</a></li>
+                  <li><a href="index.html">How it works</a></li>
                     <li><a href="projects.html">Projects</a></li>
-                    <li><a href="contact.html">Contact</a></li>
+                    <li class="active"><a href="contact.html">Contact</a></li>
                </ul>
             </nav>
             <!-- End navbar-->
@@ -59,69 +59,60 @@
         </header>
         <!-- End header-->
 
-        <!-- Project Section -->
-        <article class="row section white-bg">
-            <section id="projects">
+
+
+        <!-- Home Section -->
+        <article class="section white-bg">
+            <section id="contact">
                 <!-- Title Page -->
                 <div class="section-title">
-                    <h1 class="title">Project Name<span>.</span></h1>
+                    <h1 class="title">Contact backit<span>.</span></h1>
                 </div>
 
-                <div class="project-img">
-                    <img src="img/300x300.jpg">
-                </div>
+                <div class="contact-form-full">
 
-                <div class="project-funding">
-                    <div class="container">
-                        <div class="campaign-funding">
-                            <progress value="120" max="1000"></progress>
-                            <ul>
-                                <li><strong>5</strong> <span>Backers</span></li>
-                                <li><strong>&pound;120</strong> <span>Pledged</span></li>
-                                <li><strong>&pound;1,000</strong> <span>Target</span></li>
-                                <li><strong>12%</strong> <span>Backed</span></li>
-                                <li><strong>12</strong> <span>Days Left</span></li>
-                            </ul>
-                        </div>
-                        <p>This campaign concludes at: 15:30 26th March 2015.</p>
+
+                    <form id="contact-form" class="contact-form" action="php/contact.php">
+                        <p class="contact-name">
+                            <input id="contact_name" type="text" placeholder="Full Name" value="" name="name"/>
+                        </p>
+                        <p class="contact-email">
+                            <input id="contact_email" type="text" placeholder="Email Address" value="" name="email"/>
+                        </p>
+                        <p class="contact-message">
+                            <textarea id="contact_message" placeholder="Your Message" name="message" rows="15" cols="40"></textarea>
+                        </p>
+                        <p class="contact-submit">
+                            <a id="contact-submit" class="submit" type="submit" value="submit">Send Your Email</a>
+                        </p>
                         
-                    </div>
-                    
+                        <div id="response">
+                        
+                        </div>
+                    </form>                        
                 </div>
-
-                <form class="backit-but">
-                    <button class="button">Back This Project</button>
-                </form>
-
-
-                <div class="project-description">
-                    <div id="social-area">
-                        <nav id="social">
-                            <ul>
-                                <li><a href="https://twitter.com/BirdStudiosBtn" title="Follow us on Twitter" target="_blank"><span class="fa fa-twitter"></span></a></li>
-                                <li><a href="https://www.facebook.com/BirdStudiosBtn" title="Follow us on Facebook" target="_blank"><span class="fa fa-facebook"></span></a></li>
-                            </ul>
-                        </nav>
-
-                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
-                    tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
-                    quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
-                    consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
-                    cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
-                    proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
-                    </div>
-                </div>
-
-
-                <div class="project-backit">
-                    
-                </div>
-
-                
                 <!-- End Title Page -->
+
+                <div class="contact-details">
+                <ul>
+                    <li>Contact Details</li>
+                    <li><a href="mailto:hello@backit.je">hello@backit.je</a></li>
+                    <li>
+                        Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+                        tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+                        quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+                        consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
+                        cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
+                        proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+                        
+                    </li>
+                </ul>
+            </div>
             </section>
         </article>
-        <!-- Project Section -->
+        <!-- Home Section -->
+
+      
 
         <footer class="section">
             <section id="footer">
@@ -129,8 +120,8 @@
             </section>
         </footer>
 
-        <script src="js/main-vendors.js"></script>
+        <script src="//ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script>
+        <script>window.jQuery || document.write('<script src="js/jquery-1.11.2.min.js"><\/script>')</script>
         <script src="js/main.js"></script>
-
     </body>
 </html>

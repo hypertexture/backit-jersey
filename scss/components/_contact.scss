@@ -1,0 +1,84 @@
+/* ==================================================
+   Contact Section
+================================================== */
+
+
+.contact-details {
+
+	ul {
+		margin: 0;
+		padding: 0;
+		list-style: none;	
+	}
+
+	li {
+		margin: 0 0 20px;
+		line-height: 28px;
+		padding: 0;	
+	}
+}
+
+
+#contact-form {
+	margin-bottom: 0;
+	@include span (4);	
+}
+
+#contact-form p {
+	margin-bottom: 1px;	
+}
+
+#contact-form input,
+#contact-form textarea {
+    border: none;
+    border-radius: 0;
+	box-shadow: none;
+	background: $brand-gray;
+    color: $gray;
+    font-size: 16px;
+    height: auto;
+    padding: 15px;
+	margin: 0;
+    resize: none;
+}
+
+#contact-form {
+	input {
+	    width: 100%;
+		box-sizing: border-box;
+	}
+	textarea {
+	    width: 100%;
+		resize: vertical;
+		box-sizing: border-box;
+	}
+}
+
+#contact-form {
+	.submit {
+	    display: inline-block;
+  	margin-bottom: 0;
+  	padding: 13px 26px;
+    border: 2px solid $brand-secondary;
+  	background: $brand-primary;
+  	color: $brand-gray;
+  	vertical-align: middle;
+  	text-align: center;
+  	font-weight:500;
+  	font-size: 16px;
+  	cursor: pointer;
+    transition: all 0.1s linear;
+  	*border: 0;
+  	*zoom: 1; 
+
+		&:hover {
+		    background: #DE5E60;
+		    color: #FFFFFF;
+		}
+	}
+}
+
+#response {
+	margin-top: 20px;
+	color: #FFFFFF;
+}

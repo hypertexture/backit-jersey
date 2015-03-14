@@ -168,6 +168,10 @@ $susy: (
     	}
 	}
 
+	.contact-form-full {
+		@include span (8);
+	}
+
 }
 
 
@@ -177,7 +181,8 @@ $susy: (
 #how-it-works,
 #projects,
 #footer,
-.listings {
+.listings,
+#contact {
 	@include container;
 }
 
