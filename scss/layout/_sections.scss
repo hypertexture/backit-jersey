@@ -5,16 +5,16 @@
 //susy global settings
 $susy: (
 	columns: 12,
+	container: 1120px,
 	gutters: 1/4,
 	math: fluid,
 	output : float,
-	gutter-position : split
+	gutter-position : split,
+	global-box-sizing: border-box
 
 );
 
-.container {
-	@include container (60em);
-}
+
 // main sections styles for all sections
 .section {
 	@include span (12);
@@ -105,38 +105,61 @@ $susy: (
 	}
 }
 
-@include breakpoint (500px) {
+@include breakpoint (0 768px) {
+
+	
+	.project-funding,
+	.project-description,
+	.project-backit {
+		background: $brand-gray;
+		@include span (12);
+		margin-top: 10px;
+		padding: 30px;
+		box-sizing:border-box;
+	}
+
+	.button {
+		@include span (12);
+		box-sizing:border-box;
+		position: relative;
+		margin-top: 10px;
+	}
+
+}
+
+@include breakpoint (769px) {
 
 	.project-img {
 		background: $brand-gray;
-		@include span (7);
+		@include span (8);
 	}
 
 	.project-funding {
 		background: $brand-gray;
-		@include span (5);
+		@include span (4);
 	}
 
 	.project-description {
 		background: $brand-gray;
-		@include span (7);
+		@include span (8);
 	}
 
 	.project-backit {
 		background: $brand-gray;
-		@include span (5);
+		@include span (4);
 	}
 
-
-
 }
+
+
 
 
 // Containers for each section
 #how-it-works,
 #projects,
-#footer {
-	@include container (60em);
+#footer,
+.listings {
+	@include container;
 }
 
 

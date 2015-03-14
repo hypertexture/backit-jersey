@@ -19,18 +19,44 @@ progress[role] strong {
     display: none;
 }
   
+@include breakpoint (0 320px) {
+    .campaign-listing {
+        margin: 0 auto;
+        max-width:290px;
+    }
+}
 
+
+@include breakpoint (321px) {
+    .campaign-listing {
+        margin: 0 auto;
+        max-width:450px;
+    }
+}
+
+
+@include breakpoint (0 480px) {
+    .campaign-listing {
+        margin: 0 auto;
+        max-width:450px;
+    }
+}
+
+
+@include breakpoint (1200px) {
 .listings {
-    padding:20px 0 0 20px;
+    //padding:20px 0 0 20px;
 
     .campaign-listing {
         float:left;
         background:$brand-gray;
         padding:10px;
-        width:200px;
+        max-width:260px;
+        width: 100%;
         margin:0 20px 20px 0;
         font-size:12px;
         line-height:1.4;
+        box-sizing:border-box;
         
         h3 {
             font-size:14px;
@@ -107,6 +133,7 @@ progress[role] strong {
             }
         
         }
+    
         
         .successful {
             
@@ -170,4 +197,5 @@ progress[role] strong {
 
 }
 
+}
 
