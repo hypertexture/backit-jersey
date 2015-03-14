@@ -2,30 +2,170 @@
    Campaign Listings
 ================================================== */
 
+/* http://www.htmlgoodies.com/html5/css/using-css-to-make-a-visually-consistent-cross-browser-html5-progress-bar.html */
+progress, progress[role] {
+    appearance: none;
+    -moz-appearance: none;
+    -webkit-appearance: none;
+    border: none;
+    background-size: auto;    
+}
+
+progress[role]:after {
+    background-image: none;
+}
+
+progress[role] strong {
+    display: none;
+}
+  
+
 .listings {
     padding:20px 0 0 20px;
 
     .campaign-listing {
+        float:left;
         background:$brand-gray;
         padding:10px;
         width:200px;
         margin:0 20px 20px 0;
+        font-size:12px;
+        line-height:1.4;
         
         h3 {
             font-size:14px;
             line-height:1.4em;
-            margin:10px 0;
+            margin:10px 0 5px;
         }
         
         p { 
-            font-size:12px;
-            line-height:1.4;
             margin:0;
             
             a {
                 color:#222;
             }
         }
+        
+        .campaign-funding {
+            margin:10px 0 0;
+            border-radius:5px;
+            padding:8px;
+            background:#fff;
+            text-align:center;
+            
+            progress {
+                border:none;
+                width:100%;
+                height:18px;
+                margin:0 0 5px;
+                color: $brand-primary;
+            }
+
+            progress, progress[role][aria-valuenow] {
+               background: #eee !important;
+            }
+
+            progress::-webkit-progress-bar {
+                background: #eee;
+            }
+
+            progress::-moz-progress-bar {
+                background: $brand-primary;  
+            }
+
+            progress::-webkit-progress-value {
+                background: $brand-primary;  
+            }
+
+            progress[aria-valuenow]:before {
+                background: $brand-primary;  
+            }
+            
+            ul {
+                list-style:none;
+                
+                li {
+                    display:inline-block;
+                    text-align:center;
+                    width:23.5%;
+                    
+                    strong {
+                        display:block;
+                        font-weight:600;
+                    }
+                    
+                    span {
+                        display:block;
+                        font-size:8px;
+                    }
+                }
+                
+                li.ends-today {
+                    color:#f00;
+                }
+            
+            }
+        
+        }
+        
+        .successful {
+            
+            progress::-moz-progress-bar {
+                background: #3c3;  
+            }
+
+            progress::-webkit-progress-value {
+                background: #3c3;  
+            }
+
+            progress[aria-valuenow]:before {
+                background: #3c3;  
+            }
+            
+            ul {
+            
+                li {
+                    width:32%;
+                
+                    strong {
+                        color:#3c3;
+                    }
+                
+                }
+                
+            }
+            
+        }
+        
+        .failed {
+            
+            progress::-moz-progress-bar {
+                background: #f00;  
+            }
+
+            progress::-webkit-progress-value {
+                background: #f00;  
+            }
+
+            progress[aria-valuenow]:before {
+                background: #f00;  
+            }
+            
+            ul {
+            
+                li {
+                    width:32%;
+                
+                    strong {
+                        color:#f00;
+                    }
+                
+                }
+                
+            }
+            
+        }
+        
     }
 
 }
