@@ -23,6 +23,7 @@ progress[role] strong {
     .campaign-listing {
         margin: 0 auto;
         max-width:290px;
+        margin-top:20px;
     }
 }
 
@@ -30,7 +31,8 @@ progress[role] strong {
 @include breakpoint (321px) {
     .campaign-listing {
         margin: 0 auto;
-        max-width:450px;
+        max-width: 450px;
+        margin-top:20px;
     }
 }
 
@@ -38,12 +40,91 @@ progress[role] strong {
 @include breakpoint (0 480px) {
     .campaign-listing {
         margin: 0 auto;
-        max-width:450px;
+        max-width: 450px;
+        background:$brand-gray;
+        padding:10px;
+        margin-top:20px;
     }
+
+    .campaign-funding {
+            
+            progress {
+                margin:0 0 5px;
+            }
+            
+            ul {
+                list-style:none;
+                
+                li {
+                    display:inline-block;
+                    text-align:center;
+                    width:23.5%;
+                    
+                    strong {
+                        display:block;
+                        font-weight:600;
+                    }
+                    
+                    span {
+                        display:block;
+                        font-size:8px;
+                    }
+                }
+                
+                li.ends-today {
+                    color:#f00;
+                }
+            
+            }
+        
+        }
+}
+
+@include breakpoint (480px) {
+    .campaign-listing {
+        margin: 0 auto;
+        max-width: 450px;
+        background:$brand-gray;
+        padding:10px;
+        margin-top: 20px;
+    }
+
+    .campaign-funding {
+            
+            progress {
+                margin:0 0 5px;
+            }
+            
+            ul {
+                list-style:none;
+                
+                li {
+                    display:inline-block;
+                    text-align:center;
+                    width:23.5%;
+                    
+                    strong {
+                        display:block;
+                        font-weight:600;
+                    }
+                    
+                    span {
+                        display:block;
+                        font-size:8px;
+                    }
+                }
+                
+                li.ends-today {
+                    color:#f00;
+                }
+            
+            }
+        
+        }
 }
 
 
-@include breakpoint (1200px) {
+@include breakpoint (768px) {
 .listings {
     //padding:20px 0 0 20px;
 
