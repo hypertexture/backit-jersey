@@ -37,7 +37,7 @@
   top: 0;
   left: 0;
   height: 3px;
-  background: $orange;
+  background: $brand-secondary;
   transition: all 0.25s ease-out;
 }
 #cssmenu > ul > li {
@@ -70,7 +70,7 @@
 }
 #cssmenu > ul > li:hover > a,
 #cssmenu > ul > li.active > a {
-  color: $orange;
+  color: $brand-secondary;
 }
 #cssmenu > ul > li.has-sub > a {
   padding-right: 25px;
@@ -88,7 +88,7 @@
   transition: border-color 0.2s ease;
 }
 #cssmenu > ul > li.has-sub:hover > a::after {
-  border-color: $orange;
+  border-color: $brand-secondary;
 }
 #cssmenu ul ul {
   position: absolute;
