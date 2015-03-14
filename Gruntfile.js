@@ -16,11 +16,12 @@ module.exports = function(grunt) {
                 }
             }
         },
-
+/*
         concat: {
             dist: {
                 src: [
                     'js/plugins.js', // This specific file
+                    'jquery.dotdotdot.js',
                     'js/scripts.js'  // This specific file
                 ],
                 dest: 'js/production.js',
@@ -38,7 +39,7 @@ module.exports = function(grunt) {
                 }
             }
         },
-
+*/
         sass: {
             global: {
                 options: {
@@ -62,10 +63,12 @@ module.exports = function(grunt) {
             options: {
                 spawn: false
             },
+            /*
             js: {
                 files: ["js/*.js"],
                 tasks: ["jshint", "concat", "uglify"]
             },
+            */
             css: {
                 files: ["scss/**/*.scss"],
                 tasks: ["sass", "autoprefixer"]
