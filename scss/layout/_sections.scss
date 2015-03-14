@@ -54,9 +54,13 @@ $susy: (
 }
 
 .gray-bg {
-	background: #444444;
+	background: $brand-gray;
 	position: relative;
 	z-index: 99;
+
+	h1 {
+		color: $gray;
+	}
 }
 
 .orange-bg {
@@ -86,7 +90,7 @@ $susy: (
 	}
 
 	span {
-		color: $orange;
+		color: $brand-secondary;
 	}	
 
 	.title-description {
