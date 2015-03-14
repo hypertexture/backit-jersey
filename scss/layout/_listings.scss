@@ -85,6 +85,7 @@ progress[role] strong {
                 color:#222;
             }
         }
+    }
         
         .campaign-funding {
             
@@ -245,25 +246,27 @@ progress[role] strong {
             
             ul {
                 
-                li {
-                    display:block;
-                    font-size:22px;
-                    line-height:1.6;
-                    
-                    strong {
-                        font-weight:600;
-                        display:inline-block;
-                        text-align:right;
-                        width:30%;
-                        margin:0 5px 0 0;
-                    }
-                    
-                    span {
-                        font-size:14px;
-                        display:inline-block;
-                        vertical-align:middle;
-                    }
-                }
+                
+            }
+
+            strong {
+                font-weight:600;
+                display:inline-block;
+                text-align:right;
+                width:30%;
+                margin:0 5px 0 0;
+            }
+
+            li {
+                display:block;
+                font-size:22px;
+                line-height:1.6;         
+            }
+
+            span {
+                font-size:14px;
+                display:inline-block;
+                vertical-align:middle;
             }
             
         }
@@ -273,3 +276,4 @@ progress[role] strong {
         }
     }
 }
+
