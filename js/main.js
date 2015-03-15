@@ -99,8 +99,6 @@ $(document).ready(function(){
   menuLine.css("width", lineWidth);
   menuLine.css("left", linePosition);
 
-    $('.campaign-listing h3, .campaign-listing p').dotdotdot();
-
 
   $("#cssmenu > ul > li").hover(function() {
     activeElement = $(this);
