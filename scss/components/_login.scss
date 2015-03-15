@@ -4,7 +4,7 @@
 
 #login {
   padding: 40px;
-  width: 300px;
+  max-width: 300px;
 
   input[type="text"], 
   input[type="password"],
@@ -19,7 +19,7 @@
   position: relative;
   background: $brand-primary;
   padding: 20px;
-  width:400px;
+  max-width:400px;
   margin: 100px auto 100px;
 }
 
