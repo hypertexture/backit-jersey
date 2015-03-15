@@ -4,6 +4,11 @@ header {
 	z-index: 99;
 	background: $brand-gray;
 	height: 60px;
+	border-bottom: 1px solid $brand-primary-light;
+	position: fixed;
+	top: 0;
+	z-index: 100;
+	box-shadow: 0 0 5px 0;
 
 	#logo {
 		color: #FFFFFF;

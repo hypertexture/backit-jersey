@@ -31,21 +31,12 @@
   display: block;
   width: 70px;
   height: 70px;
-  -webkit-border-radius: 100%;
-  -moz-border-radius: 100%;
   border-radius: 100%;
   background-color: $brand-primary;
   
-  -webkit-transition: all 400ms ease-out 0s;  
-     -moz-transition: all 400ms ease-out 0s;
-     -o-transition: all 400ms ease-out 0s;
-        transition: all 400ms ease-out 0s;
+  transition: all 400ms ease-out 0s;
   
-  -webkit-transform: rotateY(180deg);
-     -moz-transform: rotateY(180deg);
-    -ms-transform: rotateY(180deg);
-     -o-transform: rotateY(180deg);
-      transform: rotateY(180deg);
+  transform: rotateY(180deg);
 }
 
 #social ul li a span {
@@ -57,27 +48,16 @@
 
   filter: alpha(opacity=30);
   
-  -webkit-transition: all 400ms ease-out 0s;  
-     -moz-transition: all 400ms ease-out 0s;
-     -o-transition: all 400ms ease-out 0s;
-        transition: all 400ms ease-out 0s;
+  transition: all 400ms ease-out 0s;
       
-  -webkit-transform: rotateY(180deg);
-     -moz-transform: rotateY(180deg);
-    -ms-transform: rotateY(180deg);
-     -o-transform: rotateY(180deg);
-      transform: rotateY(180deg);
+  transform: rotateY(180deg);
 }
 
 #social ul li:hover a,
 #social ul li.active a {
   background-color: #ffffff;  
   
-  -webkit-transform: rotateY(0deg);
-     -moz-transform: rotateY(0deg);
-    -ms-transform: rotateY(0deg);
-     -o-transform: rotateY(0deg);
-        transform: rotateY(0deg);
+  transform: rotateY(0deg);
 }
 
 #social ul li:hover a span,
@@ -86,11 +66,7 @@
   opacity: 1;
   filter: alpha(opacity=100);
   
-  -webkit-transform: rotateY(0deg);
-     -moz-transform: rotateY(0deg);
-    -ms-transform: rotateY(0deg);
-     -o-transform: rotateY(0deg);
-      transform: rotateY(0deg);
+  transform: rotateY(0deg);
 }
 
 
@@ -99,10 +75,17 @@
    Social Area In footer
 ================================================== */
 
-#social-area-pages {
-    text-align: center;
-    margin-top: 15px;
+@include breakpoint (0px 768px) {
+  #social-area-pages {
+    width: 100%!important;
+  }
+}
 
+@include breakpoint (769px) {
+  #social-area-pages {
+      text-align: center;
+      @include span (7);
+  }
 }
 
 #social-area-pages #social-pages ul {
@@ -125,21 +108,12 @@
   display: block;
   width: 40px;
   height: 40px;
-  -webkit-border-radius: 100%;
-  -moz-border-radius: 100%;
   border-radius: 100%;
   background-color: $brand-primary;
   
-  -webkit-transition: all 400ms ease-out 0s;  
-     -moz-transition: all 400ms ease-out 0s;
-     -o-transition: all 400ms ease-out 0s;
-        transition: all 400ms ease-out 0s;
+  transition: all 400ms ease-out 0s;
   
-  -webkit-transform: rotateY(180deg);
-     -moz-transform: rotateY(180deg);
-    -ms-transform: rotateY(180deg);
-     -o-transform: rotateY(180deg);
-      transform: rotateY(180deg);
+  transform: rotateY(180deg);
 }
 
 #social-pages ul li a span {
@@ -150,28 +124,18 @@
   line-height: 42px;
 
   filter: alpha(opacity=30);
-  
-  -webkit-transition: all 400ms ease-out 0s;  
-     -moz-transition: all 400ms ease-out 0s;
-     -o-transition: all 400ms ease-out 0s;
-        transition: all 400ms ease-out 0s;
+
+  transition: all 400ms ease-out 0s;
       
-  -webkit-transform: rotateY(180deg);
-     -moz-transform: rotateY(180deg);
-    -ms-transform: rotateY(180deg);
-     -o-transform: rotateY(180deg);
-      transform: rotateY(180deg);
+
+  transform: rotateY(180deg);
 }
 
 #social-pages ul li:hover a,
 #social-pages ul li.active a {
   background-color: #ffffff;  
-  
-  -webkit-transform: rotateY(0deg);
-     -moz-transform: rotateY(0deg);
-    -ms-transform: rotateY(0deg);
-     -o-transform: rotateY(0deg);
-        transform: rotateY(0deg);
+
+  transform: rotateY(0deg);
 }
 
 #social-pages ul li:hover a span,
@@ -179,10 +143,5 @@
   color: $brand-primary;
   opacity: 1;
   filter: alpha(opacity=100);
-  
-  -webkit-transform: rotateY(0deg);
-     -moz-transform: rotateY(0deg);
-    -ms-transform: rotateY(0deg);
-     -o-transform: rotateY(0deg);
-      transform: rotateY(0deg);
+  transform: rotateY(0deg);
 }

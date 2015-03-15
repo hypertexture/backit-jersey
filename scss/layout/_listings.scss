@@ -169,6 +169,8 @@ progress[role] strong {
     }
         
         .campaign-funding {
+
+
             
             progress {
                 margin:0 0 5px;
@@ -326,6 +328,9 @@ progress[role] strong {
             margin:0 0 10px;
             
             ul {
+                position: relative;
+                overflow: auto;
+                width: 100%;
 
                 li {
                     display:block;
@@ -336,12 +341,14 @@ progress[role] strong {
                     font-size:14px;
                     display:inline-block;
                     vertical-align:middle;
+                    position: absolute;
+                    right: 20px;
                     } 
 
                     strong {
                     font-weight:600;
                     display:inline-block;
-                    text-align:right;
+                    text-align:left;
                     width:30%;
                     margin:0 5px 0 0;
                     }       

@@ -124,8 +124,12 @@ $susy: (
 		background: $brand-gray;
 		@include span (12);
 		margin-top: 10px;
-		padding: 30px;
+		padding: 20px;
 		box-sizing:border-box;
+	}
+
+	.project-funding {
+		padding: 10px!important;
 	}
 
 	.button {
@@ -133,6 +137,21 @@ $susy: (
 		box-sizing:border-box;
 		position: relative;
 		margin-top: 10px;
+	}
+
+	.project-backit {
+		
+		ul {
+			list-style-type: none;
+		}
+
+		span {
+			margin-bottom: 10px;
+			bottom: 19px;
+		    left: 15px;
+		    position: relative;
+		}
+
 	}
 
 }
@@ -168,6 +187,17 @@ $susy: (
 		padding: 20px;
 		box-sizing:border-box;
 
+		ul {
+			list-style-type: none;
+		}
+
+		span {
+			margin-bottom: 10px;
+			bottom: 19px;
+		    left: 15px;
+		    position: relative;
+		}
+
 	}
 
 	.backit-but {
@@ -188,7 +218,9 @@ $susy: (
 
 }
 
-
+#projects {
+	margin-top: 50px;
+}
 
 
 // Containers for each section

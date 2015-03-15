@@ -82,7 +82,7 @@ $(document).ready(function() {
 var foundActive = false, activeElement, linePosition = 0, menuLine = $("#cssmenu #menu-line"), lineWidth, defaultPosition, defaultWidth;
 
 $("#cssmenu > ul > li").each(function() {
-  if ($(this).hasClass('active')) {
+  if ($(this).hasClass('current')) {
     activeElement = $(this);
     foundActive = true;
   }

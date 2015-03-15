@@ -6,15 +6,20 @@ footer {
 	color: #fff;
 	padding: 10px 15px!important;
 	background: $brand-primary;
+
 	@include breakpoint (0px 640px) {
 		text-align: center;
+	}
+
+	#social-area-pages {
+    	@include span (7);
 	}
 
 	.credits {
 	font-size: 16px;
 	margin: 0;	
 	color: #fff;
-	@include span (9);
+	@include span (5);
 
 		@include breakpoint (0px 640px) {
 			@include span (12);
