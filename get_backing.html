@@ -49,7 +49,7 @@
             <!-- Navbar-->
             <nav id='cssmenu'>
                <ul id="nav">
-                  <li class="current"><a href="#how-it-works">How it works</a></li>
+                    <li><a href="#how-it-works">How it works</a></li>
                     <li><a href="#current-projects">Projects</a></li>
                     <li><a href="get_backing.html">Get backing</a></li>
                     <li><a href="#contact">Contact</a></li>
@@ -59,100 +59,13 @@
 
         </header>
         <!-- End header-->
-        <div style="margin-top:30px;" class="section"><img src="img/logo.svg"></div>
-
-        <!-- Home Section -->
-        <article class="section gray-bg">
-            <section id="how-it-works">
-                <!-- Title Page -->
-                <div class="section-title">
-                    <h1 class="title">So how does crowdfunding work?</h1>
-                    <p class="title-description">At Deltra we provide resources for organisations in need of 
-                        support to strengthen their programme and project teams. Our understanding and knowledge 
-                        of the challenges you face as a business is critical to delivering the very best in 
-                        resources to your business.</p>
-
-                    <p class="title-description">Our primary focus is to understand your business, your 
-                        needs and tailor a specific delivery plan for you. Our clients include FTSE 250, 
-                        Alternative Investment Market and Small to Medium Enterprises organisations in the UK and Europe.</p>   
-                </div>
-                <!-- End Title Page -->
-            </section>
-        </article>
-        <!-- Home Section -->
-
-        <!-- Project Section -->
-        <article id="current-projects" class="section white-bg">
-            <section class="listings">
-                <div class="campaign-listing">
-                    <a href="project_details.html"><img src="img/200x200.png" alt=""></a>
-                    <h3><a href="">My First Campaign for an awesome crowdfunding project :)</a></h3>
-                    <p><a href="">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras urna nibh, iaculis id metus varius, posuere elementum felis. In pharetra diam at ante fermentum luctus. Fusce vitae quam mollis, lobortis purus suscipit, blandit metus.</a></p>
-                    <div class="campaign-funding">
-                        <progress value="120" max="1000"></progress>
-                        <ul>
-                            <li><strong>&pound;1,000</strong> <span>Target</span></li>
-                            <li><strong>12</strong> <span>Days Left</span></li>
-                            <li><strong>12%</strong> <span>Backed</span></li>
-                            <li><strong>5</strong> <span>Backers</span></li>
-                        </ul>
-                    </div>
-                </div>  
-                
-                <div class="campaign-listing">
-                    <a href="project_details.html"><img src="img/200x200.png" alt=""></a>
-                    <h3><a href="">My First Campaign</a></h3>
-                    <p><a href="">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras urna nibh, iaculis id metus varius, posuere elementum felis.</a></p>
-                    <div class="campaign-funding">
-                        <progress value="200" max="300"></progress>
-                        <ul>
-                            <li><strong>&pound;300</strong> <span>Target</span></li>
-                            <li class="ends-today"><strong>6</strong> <span>Hours Left</span></li>
-                            <li><strong>67%</strong> <span>Backed</span></li>
-                            <li><strong>3</strong> <span>Backers</span></li>
-                        </ul>
-                    </div>
-                </div> 
-                
-                <div class="campaign-listing">
-                    <a href="project_details.html"><img src="img/200x200.png" alt=""></a>
-                    <h3><a href="">My First Campaign</a></h3>
-                    <p><a href="">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras urna nibh, iaculis id metus varius, posuere elementum felis.</a></p>
-                    <div class="campaign-funding successful">
-                        <progress value="2500" max="2500"></progress>
-                        <ul>
-                            <li><strong>&pound;2,500</strong> <span>Target</span></li>
-                            <li><strong>120%</strong> <span>Backed</span></li>
-                            <li><strong>42</strong> <span>Backers</span></li>
-                        </ul>
-                    </div>
-                </div> 
-                
-                <div class="campaign-listing">
-                    <a href="project_details.html"><img src="img/200x200.png" alt=""></a>
-                    <h3><a href="">My First Campaign</a></h3>
-                    <p><a href="">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras urna nibh, iaculis id metus varius, posuere elementum felis.</a></p>
-                    <div class="campaign-funding failed">
-                        <progress value="125" max="500"></progress>
-                        <ul>
-                            <li><strong>&pound;500</strong> <span>Target</span></li>
-                            <li><strong>25%</strong> <span>Backed</span></li>
-                            <li><strong>6</strong> <span>Backers</span></li>
-                        </ul>
-                    </div>
-                </div> 
-                
-            </section>
-        </article>
-        <!-- Project Section -->
-
 
         <!-- contact Section -->
-        <article class="section gray-bg">
+        <article style="margin-top: 50px;" class="section gray-bg">
             <section id="contact">
                 <!-- Title Page -->
                 <div class="section-title">
-                    <h1 class="title">Contact <img style="height: auto; position: relative; top: 10px; width: 200px;" src="img/logo.svg"></h1>
+                    <h1 class="title">Get Backing<span>.</span></h1>
                 </div>
 
                 <div class="contact-form-full">
@@ -160,20 +73,79 @@
 
                     <form id="contact-form" class="contact-form" action="php/contact.php">
                         <p class="contact-name">
-                            <label>Full name:</label>
+                            <label>Project name:</label>
                             <input id="contact_name" type="text" placeholder="Type your name here..." value="" name="name"/>
                         </p>
-                        <p class="contact-email">
-                            <label>Email address:</label>
-                            <input id="contact_email" type="text" placeholder="Type your email here..." value="" name="email"/>
-                        </p>
+
                         <p class="contact-message">
-                            <label>Message:</label>
+                            <label>Project Summary:</label>
                             <textarea id="contact_message" placeholder="Type your message here..." name="message" rows="15" cols="40"></textarea>
                         </p>
-                        <p class="contact-submit">
-                            <a id="contact-submit" class="submit" type="submit" value="submit">Send Your Email</a>
+
+                        <p class="contact-message">
+                            <label>Project Description:</label>
+                            <textarea id="contact_message" placeholder="Type your message here..." name="message" rows="15" cols="40"></textarea>
                         </p>
+
+                        <p>
+                            <label>Choose a category:</label>
+                            <select name="Category">
+                            <option value="Milk">Art</option>
+                            <option value="Cheese">Music</option>
+                            <option value="Bread">Sport</option>
+                        </p>
+
+                        <p class="contact-email">
+                            <label>Your hashtag:</label>
+                            <input id="contact_email" type="text" placeholder="Type your hashtag here..." value="" name="email"/>
+                        </p>
+
+                        <p>
+                            <label>Upload your video:</label>
+                            <input type="text" name="textline" size="30">
+                        </p>
+                            <label>Upload your video:</label>
+                            <input type="file" name="datafile" size="40">
+                        </p>
+
+                        <p>
+                            <label>Upload your Ppoto:</label>
+                            <input type="text" name="textline" size="30">
+                        </p>
+                            <label>Upload your photo:</label>
+                            <input type="file" name="datafile" size="40">
+                        </p>
+
+                        <p>
+                            <label>Choose a campaign model:</label>
+                            <select name="model">
+                            <option value="Milk">Art</option>
+                            <option value="Cheese">Music</option>
+                            <option value="Bread">Sport</option>
+                        </p>
+
+                        <p class="contact-email">
+                            <label>Your start date:</label>
+                            <input id="contact_email" type="text" placeholder="Type your start date here..." value="" name="email"/>
+                        </p>
+
+                        <p class="contact-email">
+                            <label>Your end date:</label>
+                            <input id="contact_email" type="text" placeholder="Type your end date here..." value="" name="email"/>
+                        </p>
+
+                        <p class="contact-email">
+                            <label>Amount of backing:</label>
+                            <input id="contact_email" type="text" placeholder="Type your target amount here..." value="" name="email"/>
+                        </p>
+
+                        <p class="contact-submit">
+                            <a id="contact-submit" class="submit" type="submit" value="submit">Submit your details</a>
+                        </p>
+
+
+
+        
                         
                         <div id="response">
                         
@@ -183,7 +155,7 @@
                 <!-- End Title Page -->
 
                 <div class="contact-details">
-                    <h1>Feel free to get in touch with us</h1>
+                    <h1>Looking forward to getting backing?</h1>
                 <ul>
 
                     <li><a href="mailto:hello@backit.je">hello@backit.je</a></li>
