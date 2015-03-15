@@ -5,6 +5,8 @@
 
 .contact-details {
 
+	@include span (4);
+
 	ul {
 		margin: 0;
 		padding: 0;
@@ -30,16 +32,15 @@
 
 #contact-form input,
 #contact-form textarea {
-    border: none;
     border-radius: 0;
 	box-shadow: none;
-	background: $brand-gray;
-    color: $gray;
+	background: $gray-lighter;
+    color: $brand-primary;
     font-size: 16px;
     height: auto;
     padding: 15px;
-	margin: 0;
     resize: none;
+    font-family: 'Open sans';
 }
 
 #contact-form {
@@ -59,7 +60,7 @@
 	    display: inline-block;
   	margin-bottom: 0;
   	padding: 13px 26px;
-    border: 2px solid $brand-secondary;
+    border: 2px solid $gray;
   	background: $brand-primary;
   	color: $brand-gray;
   	vertical-align: middle;
@@ -72,7 +73,7 @@
   	*zoom: 1; 
 
 		&:hover {
-		    background: #DE5E60;
+		    background: $brand-secondary;
 		    color: #FFFFFF;
 		}
 	}
@@ -81,4 +82,21 @@
 #response {
 	margin-top: 20px;
 	color: #FFFFFF;
+}
+
+input[type=text], 
+textarea {
+  transition: all 0.30s ease-in-out;
+  outline: none;
+  padding: 15px;
+  margin: 5px 1px 3px 0px;
+  border: 1px solid $brand-primary-light;
+}
+ 
+input[type=text]:focus, 
+textarea:focus {
+  box-shadow: 0 2 8px rgba(89, 132, 197, 1);
+  padding: 15px;
+  margin: 5px 1px 3px 0px;
+  border: 1px solid rgba(89, 132, 197, 1);
 }

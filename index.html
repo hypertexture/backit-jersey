@@ -49,18 +49,18 @@
             <!-- Navbar-->
             <nav id='cssmenu'>
                <ul>
-                  <li class="active"><a href="index.html">How it works</a></li>
-                    <li><a href="projects.html">Projects</a></li>
-                    <li><a href="contact.html">Contact</a></li>
+                  <li class="active"><a href="#how-it-works">How it works</a></li>
+                    <li><a href="#listings">Projects</a></li>
+                    <li><a href="#contact">Contact</a></li>
                </ul>
             </nav>
             <!-- End navbar-->
 
         </header>
         <!-- End header-->
-
+        <img src="img/logo.svg">
         <!-- Home Section -->
-        <article class="section white-bg">
+        <article class="section gray-bg">
             <section id="how-it-works">
                 <!-- Title Page -->
                 <div class="section-title">
@@ -80,10 +80,10 @@
         <!-- Home Section -->
 
         <!-- Project Section -->
-        <article class="section gray-bg">
+        <article class="section white-bg">
             <section class="listings">
                 <div class="campaign-listing">
-                    <a href=""><img src="img/200x200.png" alt=""></a>
+                    <a href="project_details.html"><img src="img/200x200.png" alt=""></a>
                     <h3><a href="">My First Campaign for an awesome crowdfunding project :)</a></h3>
                     <p><a href="">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras urna nibh, iaculis id metus varius, posuere elementum felis. In pharetra diam at ante fermentum luctus. Fusce vitae quam mollis, lobortis purus suscipit, blandit metus.</a></p>
                     <div class="campaign-funding">
@@ -98,7 +98,7 @@
                 </div>  
                 
                 <div class="campaign-listing">
-                    <a href=""><img src="img/200x200.png" alt=""></a>
+                    <a href="project_details.html"><img src="img/200x200.png" alt=""></a>
                     <h3><a href="">My First Campaign</a></h3>
                     <p><a href="">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras urna nibh, iaculis id metus varius, posuere elementum felis.</a></p>
                     <div class="campaign-funding">
@@ -113,7 +113,7 @@
                 </div> 
                 
                 <div class="campaign-listing">
-                    <a href=""><img src="img/200x200.png" alt=""></a>
+                    <a href="project_details.html"><img src="img/200x200.png" alt=""></a>
                     <h3><a href="">My First Campaign</a></h3>
                     <p><a href="">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras urna nibh, iaculis id metus varius, posuere elementum felis.</a></p>
                     <div class="campaign-funding successful">
@@ -127,7 +127,7 @@
                 </div> 
                 
                 <div class="campaign-listing">
-                    <a href=""><img src="img/200x200.png" alt=""></a>
+                    <a href="project_details.html"><img src="img/200x200.png" alt=""></a>
                     <h3><a href="">My First Campaign</a></h3>
                     <p><a href="">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras urna nibh, iaculis id metus varius, posuere elementum felis.</a></p>
                     <div class="campaign-funding failed">
@@ -146,7 +146,7 @@
 
 
         <!-- contact Section -->
-        <article class="section white-bg">
+        <article class="section gray-bg">
             <section id="contact">
                 <!-- Title Page -->
                 <div class="section-title">
@@ -158,13 +158,16 @@
 
                     <form id="contact-form" class="contact-form" action="php/contact.php">
                         <p class="contact-name">
-                            <input id="contact_name" type="text" placeholder="Full Name" value="" name="name"/>
+                            <label>Full name:</label>
+                            <input id="contact_name" type="text" placeholder="Type your name here..." value="" name="name"/>
                         </p>
                         <p class="contact-email">
-                            <input id="contact_email" type="text" placeholder="Email Address" value="" name="email"/>
+                            <label>Email address:</label>
+                            <input id="contact_email" type="text" placeholder="Type your email here..." value="" name="email"/>
                         </p>
                         <p class="contact-message">
-                            <textarea id="contact_message" placeholder="Your Message" name="message" rows="15" cols="40"></textarea>
+                            <label>Message:</label>
+                            <textarea id="contact_message" placeholder="Type your message here..." name="message" rows="15" cols="40"></textarea>
                         </p>
                         <p class="contact-submit">
                             <a id="contact-submit" class="submit" type="submit" value="submit">Send Your Email</a>
@@ -178,8 +181,9 @@
                 <!-- End Title Page -->
 
                 <div class="contact-details">
+                    <h1>Feel free to get in touch with us</h1>
                 <ul>
-                    <li>Contact Details</li>
+
                     <li><a href="mailto:hello@backit.je">hello@backit.je</a></li>
                     <li>
                         Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
