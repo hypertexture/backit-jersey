@@ -3,7 +3,8 @@
 ================================================== */
 
 footer {
-
+	color: #fff;
+	padding: 20px 15px!important;
 	background: $brand-primary;
 	@include breakpoint (0px 640px) {
 		text-align: center;
@@ -12,6 +13,7 @@ footer {
 	.credits {
 	font-size: 16px;
 	margin: 0;	
+	color: #fff;
 	@include span (9);
 
 		@include breakpoint (0px 640px) {

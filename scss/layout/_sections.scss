@@ -70,6 +70,16 @@ $susy: (
 	}
 }
 
+.gray-lighter-bg {
+	background: $gray-lighter;
+	position: relative;
+	z-index: 99;
+
+	h1 {
+		color: $gray;
+	}
+}
+
 .orange-bg {
 	background: $orange;
 	position: relative;

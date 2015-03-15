@@ -326,30 +326,27 @@ progress[role] strong {
             margin:0 0 10px;
             
             ul {
-                
-                
-            }
 
-            strong {
-                font-weight:600;
-                display:inline-block;
-                text-align:right;
-                width:30%;
-                margin:0 5px 0 0;
-            }
+                li {
+                    display:block;
+                    font-size:22px;
+                    line-height:1.6; 
 
-            li {
-                display:block;
-                font-size:22px;
-                line-height:1.6;         
-            }
+                    span {
+                    font-size:14px;
+                    display:inline-block;
+                    vertical-align:middle;
+                    } 
 
-            span {
-                font-size:14px;
-                display:inline-block;
-                vertical-align:middle;
-            }
-            
+                    strong {
+                    font-weight:600;
+                    display:inline-block;
+                    text-align:right;
+                    width:30%;
+                    margin:0 5px 0 0;
+                    }       
+                }    
+            }      
         }
         
         p {
