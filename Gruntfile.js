@@ -16,15 +16,14 @@ module.exports = function(grunt) {
                 }
             }
         },
-/*
-        concat: {
+
+        /*concat: {
             dist: {
                 src: [
                     'js/plugins.js', // This specific file
-                    'jquery.dotdotdot.js',
                     'js/scripts.js'  // This specific file
                 ],
-                dest: 'js/production.js',
+                dest: 'js/build/production.js',
             }
         },
 
@@ -35,27 +34,46 @@ module.exports = function(grunt) {
         uglify: {
             global: {
                 files: {
-                    "js/production.min.js": "js/production.js"
+                    "js/build/production.min.js": "js/build/production.js"
                 }
             }
-        },
-*/
+        },*/
+
+        // Grunt-sass 
         sass: {
-            global: {
+          app: {
+            // Takes every file that ends with .scss from the scss 
+            // directory and compile them into the css directory. 
+            // Also changes the extension from .scss into .css. 
+            // Note: file name that begins with _ are ignored automatically
+            files: [{
+              expand: true,
+              cwd: 'scss',
+              src: ['*.scss'],
+              dest: 'css',
+              ext: '.css'
+            }]
+          },
+          options: {
+            sourceMap: true, 
+            outputStyle: 'nested', 
+            imagePath: "../",
+          },
+          global: {
                 options: {
                     style: "compressed",
                     precision: 10
                 },
                 files: {
-                    "css/main-unprefixed.css": "scss/main.scss"   
+                    "css/style-unprefixed.css": "scss/style.scss" 
                 }
             }
         },
 
         autoprefixer: {
             global: {
-                src: "css/main-unprefixed.css",
-                dest: "css/main.css"
+                src: "css/style-unprefixed.css",
+                dest: "css/style.css"
             }
         },
 
@@ -63,15 +81,28 @@ module.exports = function(grunt) {
             options: {
                 spawn: false
             },
-            /*
-            js: {
-                files: ["js/*.js"],
-                tasks: ["jshint", "concat", "uglify"]
-            },
-            */
             css: {
                 files: ["scss/**/*.scss"],
                 tasks: ["sass", "autoprefixer"]
+            }
+        },
+
+        browserSync: {
+            dev: {
+                bsFiles: {
+                    src : [
+                        'css/style.css',
+                        'scss/**/*.scss',
+                        'js/*.js',
+                        '*.php',
+                        '*.html',
+                        'img/**/.{png,jpg,gif,svg}'
+                    ]
+                },
+                options: {
+                    watchTask: true, // < VERY important
+                    proxy: "backit.je.dev"
+                }
             }
         }
     });
@@ -80,6 +111,6 @@ module.exports = function(grunt) {
     require("load-grunt-tasks")(grunt);
 
     // 4. Where we tell Grunt what to do when we type "grunt" into the terminal.
-    grunt.registerTask("default", ["sass", "autoprefixer", "watch"]);
+    grunt.registerTask("default", ["sass", "autoprefixer", "browserSync", "watch"]);
 
 };

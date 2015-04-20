@@ -12,7 +12,7 @@
   display: block;
   position: relative;
   box-sizing: border-box;
-  float: right;
+  //float: right;
 }
 
 #cssmenu:after,
@@ -43,23 +43,7 @@
 #cssmenu > ul > li {
   float: left;
 }
-#cssmenu.align-center > ul {
-  font-size: 0;
-  text-align: center;
-}
-#cssmenu.align-center > ul > li {
-  display: inline-block;
-  float: none;
-}
-#cssmenu.align-center ul ul {
-  text-align: left;
-}
-#cssmenu.align-right > ul > li {
-  float: right;
-}
-#cssmenu.align-right ul ul {
-  text-align: right;
-}
+
 #cssmenu > ul > li > a {
   padding: 22px;
   font-size: 16px;
@@ -71,6 +55,7 @@
 #cssmenu > ul > li:hover > a,
 #cssmenu > ul > li.current > a {
   color: $brand-secondary;
+  background: $brand-primary;
 }
 #cssmenu > ul > li.has-sub > a {
   padding-right: 25px;

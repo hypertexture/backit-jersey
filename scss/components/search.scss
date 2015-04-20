@@ -1,0 +1,69 @@
+/*** STYLES ***/
+.search {
+	display: inline-block;
+	position: relative;
+	height: 26px;
+	width: 26px;
+	box-sizing: border-box;
+	margin: 17px 8px 7px 0px;
+	padding: 7px 9px 0px 9px;
+	border: 3px solid $gray-light;
+	border-radius: 25px;
+	transition: all 200ms ease;
+	cursor: text;
+	
+	&:after {
+		content: "";
+		position: absolute;
+		width: 3px;
+		height: 20px;
+		right: 22px;
+		top: 14px;
+		background: $gray-light;
+		border-radius: 3px;
+		transform: rotate(-135deg);
+		transition: all 200ms ease;
+	}
+	
+	&.active,
+	&:hover {
+		width: 200px;
+		margin-right: 0px;
+		
+		&:after {
+			height: 0px;	
+		}
+	}
+	
+	input {
+		width: 100%;
+		border: none;
+		box-sizing: border-box;
+		font-family: Helvetica;
+		font-size: 15px;
+		color: inherit;
+		background: transparent;
+		outline-width: 0px;
+		line-height: 0;
+		margin-top: -10px!important;
+	}
+}
+
+#cssmenu li.cntr {
+	margin-right: 15px;
+	margin-left: 25px;
+}
+
+#cssmenu ul li:nth-child(1) {
+	border: none;
+}
+#cssmenu ul li {
+	border-left: 1px solid $gray-light;
+}
+
+
+
+#inpt_search {
+	border: none!important;
+	padding:0!important;
+}

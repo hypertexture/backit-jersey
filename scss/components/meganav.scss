@@ -1,0 +1,485 @@
+/* ==============================
+	Navigation styles
+================================= */
+
+h1.nav-header {
+  font-size: 28px;
+  color: $gray;
+  text-transform: uppercase;
+  text-align: left;
+}
+
+.mega-dropper-hidden {
+    width: 40%;
+    height: auto;
+    background: $brand-gray;
+    transition: top 100ms ease-in-out;
+    position: absolute;
+    top: 61px;
+    right: 0;
+    z-index: 1000;
+    padding: 20px 45px 50px 45px;
+    visibility: hidden;
+    opacity: 0;
+    transition: opacity 600ms ease;
+    //@extend .container-fluid;
+
+  /*-ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=90)";
+  filter: alpha(opacity=99);
+  -khtml-opacity: 0.99;
+  -moz-opacity: 0.90;
+  opacity: 0.99;*/
+}
+
+.mega-dropper {
+    position: fixed;
+    transition: top 100ms ease-in-out;
+    margin: 0; 
+    visibility: visible;
+    opacity: 1;
+    transition: opacity 600ms ease;
+    border-bottom: 1px solid $gray;
+    border-left: 1px solid $gray-light;
+    border-top: none;
+    box-shadow: 0 0 5px 0;
+}
+
+.mega-dropper-hidden .row {
+  margin: 0!important;
+}
+
+.mega-menu-column {
+  //@extend .col-md-3;
+
+  img {
+    max-width: 300px;
+    width:100%;
+    height: auto;
+    margin-top: 40px;
+  }
+  ul {
+
+  }
+  li {
+    text-transform: uppercase;
+    border-bottom: 1px solid $gray-light;
+    list-style-type: none;
+    padding:15px 0 5px 0; 
+    color: #fff!important;
+    text-align: left;
+  }
+  a {
+    color: $brand-primary;
+    &:hover {
+      color: $brand-link-hover;
+    }
+  }
+}
+
+
+.nav {
+  margin-left: 40px;
+
+  li {
+	border-right: .5px solid #eee;
+	text-transform: uppercase;
+	font-family: 'Open Sans', sans-serif;
+  }
+
+  a {
+  font-size: 12px;
+
+  }
+}
+
+.icons-nav {
+
+  a {
+    padding:5px!important;
+  }
+
+  i {
+    font-size:21px; 
+    padding:10px!important;
+  }
+}
+
+.navbar {
+  border-bottom: 1px solid #777;
+}
+
+.navbar-default .navbar-nav li{
+  border-bottom: none;
+  border-right: 1px solid #777;
+}
+
+
+/* ==============================
+  Logo styles
+================================= */
+
+.fill-white {
+  fill:#fff;
+}
+
+.fill-red {
+  fill:#E40520!important;
+  transition: all 5s ease-in-out;
+}
+
+.canvas-container {
+    position: absolute;
+}
+
+#logo-canvas {
+    height: 201px;
+    width: 132px;
+    margin-left: 114px;
+}
+#logo-canvas {
+    display: none;
+    height: 188px;
+    margin-left: 6%;
+    position: fixed;
+    top: 115px;
+    transition: top 0.5s ease-in-out 0s;
+    width: 124px;
+    z-index: 2;
+}
+
+#logo {
+    left: auto;
+    width: 180px;
+    height: 100%;
+    margin-left: 55px; 
+    position: fixed;
+    top: 115px;
+    transform: translateZ(0px);
+    z-index: 20;
+}
+
+.logo-style h1{
+    color: #fff;
+}
+
+.breadcrumb {
+  width: 300px; 
+  margin-top: 100px;
+  background:transparent; 
+}
+
+
+/* ==============================
+  Responsive
+================================= */
+
+/* Smartphones (portrait and landscape) ----------- */
+@media only screen and (min-device-width : 320px) and (max-device-width : 480px) {
+/* Styles */
+
+  .nav {
+    margin-left: -14px;
+  }
+
+  #logo {
+    height: 72px;
+    margin-left: 12px;
+    width:96px;
+    top: -10px;
+    z-index: 1030;
+  }
+}
+
+/* Smartphones (landscape) ----------- */
+@media only screen and (min-width : 321px) {
+/* Styles */
+
+  .nav {
+    margin-left: -14px;
+  }
+
+  .mega-dropper-hidden {
+    display: none;
+  }
+
+  #logo {
+    height: 72px;
+    margin-left: 12px;
+    width:100px;
+    top: 10px;
+    z-index: 1030;
+  }
+
+  #logo {
+    top: 10px;
+  }
+}
+
+/* Smartphones (portrait) ----------- */
+@media only screen and (max-width : 320px) {
+/* Styles */
+
+  .nav {
+    margin-left: -14px;
+  }
+
+  #logo {
+    height: 72px;
+    margin-left: 12px;
+    width:100px;
+    top: 10px;
+    z-index: 1030;
+  }
+
+  .mega-dropper-hidden {
+    display: none;
+  }
+}
+
+/* iPads (portrait and landscape) ----------- */
+@media only screen and (min-device-width : 768px) and (max-device-width : 1024px) {
+/* Styles */
+}
+
+/* iPads (landscape) ----------- */
+@media only screen and (min-device-width : 768px) and (max-device-width : 1024px) and (orientation : landscape) {
+/* Styles */
+
+  .nav {
+    margin-left: 5px;
+
+
+    a {
+      font-size: 11px;
+      padding: 13px 17px !important;
+
+    }
+  }
+
+  .icons-nav i {
+    font-size: 19px;
+    padding: 0 !important;
+  }
+
+  #logo {
+    height: 105px;
+    margin-left: 50px;
+    width:180px;
+    top: 100px;
+    z-index: 980;
+  }
+  .mega-dropper-hidden, .mega-dropper-hidden-1, .mega-dropper-hidden-2,.mega-dropper-hidden-3{
+    display: block;
+  }
+
+}
+
+/* iPads (portrait) ----------- */
+@media only screen and (min-device-width : 768px) and (max-device-width : 1024px) and (orientation : portrait) {
+/* Styles */
+
+  .nav {
+    margin-left: 10px;
+
+    li {
+      border-right: .5px solid #eee;
+      text-transform: uppercase;
+      font-family: 'Open Sans', sans-serif;
+    }
+
+    a {
+      font-size: 12px;
+
+    }
+  }
+
+  nav {
+    li:first-child, li:last-child {
+      position: absolute; top: 0; border-right: 0!important; display: block; visibility: visible; z-index: 90000;
+      opacity:1;
+      transition: opacity 3s ease;
+    }
+
+    li:last-child {
+      left: 170px;
+    }
+
+    li:first-child {
+      left: 120px;
+    }
+  }
+
+  .mega-dropper-hidden, .mega-dropper-hidden-1, .mega-dropper-hidden-2,.mega-dropper-hidden-3{
+    display: none;
+  }
+
+  #logo {
+    height: 90px;
+    margin-left: 12px;
+    width:100px;
+    top: 11px;
+    z-index: 1030;
+  }
+}
+
+/* Desktops and laptops ----------- */
+@media only screen and (min-width : 1024px) {
+/* Styles */
+
+  #logo {
+    height: 105px;
+    margin-left: 50px;
+    width:180px;
+    top: 100px;
+    z-index: 980;
+  }
+  .mega-dropper-hidden, .mega-dropper-hidden-1, .mega-dropper-hidden-2,.mega-dropper-hidden-3{
+    display: block;
+  }
+
+}
+
+/* Desktops and laptops ----------- */
+@media only screen and (min-width : 1224px) {
+/* Styles */
+  .nav {
+    margin-left: 40px;
+
+    li {
+    border-right: .5px solid #eee;
+    text-transform: uppercase;
+    font-family: 'Open Sans', sans-serif;
+    }
+
+    a {
+    font-size: 12px;
+
+    }
+  }
+
+
+  .mega-dropper-hidden, .mega-dropper-hidden-1, .mega-dropper-hidden-2,.mega-dropper-hidden-3{
+    display: block;
+  }
+
+
+  #logo {
+    height: 105px;
+    //margin-left: 20px;
+    width:180px;
+    top: 100px;
+    z-index: 980;
+  }
+}
+
+/* Regular windows laptops ----------- */
+@media only screen and (min-width : 1366px) { 
+/* Styles */
+  .nav {
+    margin-left: 40px;
+
+    li {
+      border-right: .5px solid #eee;
+      text-transform: uppercase;
+      font-family: 'Open Sans', sans-serif;
+    }
+
+    a {
+      font-size: 12px;
+    }
+  }
+
+  .mega-dropper-hidden, .mega-dropper-hidden-1, .mega-dropper-hidden-2,.mega-dropper-hidden-3{
+    display: block;
+  }
+
+  #logo {
+    left: auto;
+    width: 210px;
+    height: 200px;
+    margin-left: 55px; 
+    position: fixed;
+    top: 115px;
+    transform: translateZ(0px);
+    z-index: 20;
+  }
+}
+
+/* Macbook Pro 15" laptops ----------- */
+@media only screen and (min-width : 1400px) { 
+/* Styles */
+
+  .nav {
+      margin-left: 40px;
+
+    li {
+      border-right: .5px solid #eee;
+      text-transform: uppercase;
+      font-family: 'Open Sans', sans-serif;
+    }
+
+    a {
+      font-size: 15px;
+
+    }
+  }
+
+  .mega-dropper-hidden, .mega-dropper-hidden-1, .mega-dropper-hidden-2,.mega-dropper-hidden-3{
+    display: block;
+  }
+
+  #logo {
+    left: auto;
+    width: 240px!important;
+    height: 180px!important;
+    margin-left: 55px; 
+    position: fixed;
+    top: 115px;
+    transform: translateZ(0px);
+    z-index: 20;
+
+  }
+
+}
+
+/* Large screens ----------- */
+@media only screen and (min-width : 1824px) {
+/* Styles */
+
+  .nav {
+      margin-left: 40px;
+
+    li {
+      border-right: .5px solid #eee;
+      text-transform: uppercase;
+      font-family: 'Open Sans', sans-serif;
+    }
+
+    a {
+      font-size: 14px;
+    }
+  }
+
+  .mega-dropper-hidden, .mega-dropper-hidden-1, .mega-dropper-hidden-2,.mega-dropper-hidden-3{
+    display: block;
+  }
+
+  #logo {
+    left: auto;
+    width: 290px!important;
+    height: auto;
+    margin-left: 55px; 
+    position: fixed;
+    top: 115px;
+    transform: translateZ(0px);
+    z-index: 20;
+  }
+
+}
+
+/* iPhone 4 ----------- */
+@media
+only screen and (-webkit-min-device-pixel-ratio : 1.5),
+only screen and (min-device-pixel-ratio : 1.5) {
+/* Styles */
+}

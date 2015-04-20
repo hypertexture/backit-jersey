@@ -64,57 +64,44 @@
   };
 })(jQuery);
 
-/*$(document).ready(function(){
-    $('.campaign-listing h3, .campaign-listing p').dotdotdot();
-});*/
 
-(function($){
+
+$("#inpt_search").on('focus', function () {
+  $(this).parent('label').addClass('active');
+});
+
+$("#inpt_search").on('blur', function () {
+  if($(this).val().length == 0)
+    $(this).parent('label').removeClass('active');
+});
+
+// ----------------------------------
+// Mega Nav Drop Down menu functions
+//-----------------------------------
+
 $(document).ready(function(){
 
-  $(document).ready(function() {
-    $("#cssmenu").menumaker({
-      title: "Menu",
-      format: "multitoggle"
-    });
+  var userMenu = $('#userMenu');
 
-  $("#cssmenu").prepend("<div id='menu-line'></div>");
+  $('#user-dropdown').on('mouseenter tap', function(){
+      userMenu.addClass('mega-dropper');
 
-  var foundActive = false, activeElement, linePosition = 0, menuLine = $("#cssmenu #menu-line"), lineWidth, defaultPosition, defaultWidth;
+          userMenu.on('mouseleave', function(){
+              userMenu.removeClass('mega-dropper');
+          });
 
-  $("#cssmenu > ul > li").each(function() {
-    if ($(this).hasClass('current')) {
-      activeElement = $(this);
-      foundActive = true;
-    }
   });
 
-  if (foundActive === false) {
-    activeElement = $("#cssmenu > ul > li").first();
-  }
 
-  defaultWidth = lineWidth = activeElement.width();
+});
 
-  defaultPosition = linePosition = activeElement.position().left;
-
-  menuLine.css("width", lineWidth);
-  menuLine.css("left", linePosition);
-
-
-  $("#cssmenu > ul > li").hover(function() {
-    activeElement = $(this);
-    lineWidth = activeElement.width();
-    linePosition = activeElement.position().left;
-    menuLine.css("width", lineWidth);
-    menuLine.css("left", linePosition);
-  }, 
-
-  function() {
-    menuLine.css("left", defaultPosition);
-    menuLine.css("width", defaultWidth);
-  });
+$('#log-in').on ('click', function(){
+$('#login-tog').addClass('open');
 
 });
 
 
-});
-})(jQuery);
+//--------------------------------------------------------
+
+//--------------------------------------------------------
+

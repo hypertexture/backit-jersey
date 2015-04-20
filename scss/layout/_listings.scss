@@ -1,3 +1,53 @@
+.project-image {
+    @include span (5);
+}
+
+.funding-progress {
+    @include span (5);
+    h1 {
+        color: $brand-primary;
+    }
+}
+
+.categories {
+    @include span (2);
+    position: relative;
+    left: 50px;
+
+    ul {
+        list-style-type: none;
+        border-left: 3px solid $gray-light;
+
+    }
+
+    li {
+      padding-left: 32px;
+    }
+    
+    li.active {
+        color: $brand-primary;
+        font-weight: 600;
+
+        &:before {
+            content: '\2022';
+            display: block;
+            position: relative;
+            max-width: 0;
+            max-height: 0;
+            left: -50px;
+            top: 0;
+            color: $brand-primary;
+            font-size: 100px;
+            list-style-type: none;
+            display: block;
+        }
+    }
+}
+
+
+
+
+
 /* ==================================================
    Campaign Listings
 ================================================== */
@@ -7,8 +57,8 @@ progress, progress[role] {
     appearance: none;
     -moz-appearance: none;
     -webkit-appearance: none;
-    border: none;
-    background-size: auto;    
+    border-top-left-radius:2em;
+    background-size: auto; 
 }
 
 progress[role]:after {
@@ -41,7 +91,6 @@ progress[role] strong {
     .campaign-listing {
         margin: 0 auto;
         max-width: 450px;
-        background:$brand-gray;
         padding:10px;
         margin-top:20px;
     }
@@ -68,6 +117,7 @@ progress[role] strong {
                     span {
                         display:block;
                         font-size:8px;
+                        color: $gray;
                     }
                 }
                 
@@ -84,15 +134,16 @@ progress[role] strong {
     .campaign-listing {
         margin: 0 auto;
         max-width: 450px;
-        background:$brand-gray;
-        padding:10px;
+        background: #fff;
         margin-top: 20px;
+        border: 1px solid $gray-light;
     }
 
     .campaign-funding {
             
             progress {
                 margin:0 0 5px;
+                border-radius: 75px;
             }
             
             ul {
@@ -106,11 +157,14 @@ progress[role] strong {
                     strong {
                         display:block;
                         font-weight:600;
+                        font-size: 21px;
+                        line-height: 15px;
                     }
                     
                     span {
                         display:block;
-                        font-size:8px;
+                        font-size:12px;
+                        color: $gray;  
                     }
                 }
                 
@@ -130,17 +184,18 @@ progress[role] strong {
 
     .campaign-listing {
         float:left;
-        background:$brand-gray;
-        padding:10px;
-        max-width:260px;
+        max-width:353px;
         width: 100%;
         margin:0 20px 20px 0;
         font-size:12px;
         line-height:1.4;
         box-sizing:border-box;
+        border-radius: 7px;
         
         img {
             margin:0 0 5px;
+            border-top-left-radius: 7px;
+            border-top-right-radius: 7px;
         }
         
         h3 {
@@ -244,29 +299,35 @@ progress[role] strong {
 
 
 .campaign-funding {
-    border-radius:5px;
-    padding:8px;
-    background:#fff;
+    //border-radius:5px;
+    padding:12px;
+    //background:#fff;
     text-align:center;
+    h3,p {
+        text-align: left;
+    }
         
 
-    progress {
-        border:none;
+    progress {   
         width:100%;
         height:18px;
-        color: $brand-primary;
+        color: #fff;
+        border: 2px solid $gray-light; 
+        background-color: #fff;
     }
 
     progress, progress[role][aria-valuenow] {
-       background: #eee !important;
+       background: #fff !important;
     }
 
     progress::-webkit-progress-bar {
-        background: #eee;
+        background: #fff;
     }
 
     progress::-moz-progress-bar {
-        background: $brand-primary;  
+        background: $brand-primary; 
+        border-top-left-radius:2em;
+        border-bottom-left-radius:2em; 
     }
 
     progress::-webkit-progress-value {

@@ -16,7 +16,10 @@
 }
 
 .login-content {
-  position: relative;
+  position: absolute;
+  right: 0;
+  left: 0;
+  z-index: 1000;
   background: $brand-primary;
   padding: 20px;
   max-width:400px;
@@ -28,7 +31,15 @@
   padding: 0;
   margin: 0 auto;
   overflow: auto;
-  border:5px solid $brand-secondary;
+  border: 5px solid $brand-secondary;
   /* text color */
   background-color: $brand-gray;
+}
+
+#login-tog {
+  display: none;
+}
+
+#login-tog.open {
+  display: block;
 }

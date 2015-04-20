@@ -1,0 +1,29 @@
+CMS for users projects
+
+Overview Page
+
+Project Title
+Project Image
+Short blurb
+Category
+Location —? 
+Funding duration
+Funding goal
+
+backers returns
+
+Pledge amount
+Description of return
+
+Your Story
+
+Project video
+Project description in full
+
+About you
+
+Profile photo
+Name
+Bio
+Location
+Website

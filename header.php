@@ -1,25 +1,61 @@
-<!-- Header-->
-<header>
+		<!-- Header-->
+		<header>
 
-	<div id="logo">
-        	<a href="index.php" title="Deltra | lorem ipsum">Deltra</a>
-    </div>
+		    <div id="logo">
+		        <a href="/" title="BackIt.je">BackIt.je</a>
+		    </div>
 
-	<!-- Navbar-->
-	<nav id='cssmenu'>
-	   <ul>
-	      <li class="active"><a href="">About</a></li>
-			<li><a href="">Services</a></li>
-			<li><a href="">Projects</a></li>
-			<li><a href="">Contact Us</a></li>
-			<li><a href="">Vacancies</a></li>
-	   </ul>
-	</nav>
-	<!-- End navbar-->
+		    <!-- Navbar-->
+		    <nav id='cssmenu'>
+		        <ul>
+		           <li class="cntr">
+		                <div class="cntr-innr">
+		                  <label class="search" for="inpt_search">
+		                        <input id="inpt_search" type="text" />
+		                    </label>
+		                </div>
+		            </li>
+		            <li><a href="get_backing.php">Create a project</a></li>
+		            <li><a href="#">Discover projects</a></li>
 
-</header>
-<!-- End header-->
+		            <li id="log-in" class="sign-in">Sign in <span class="fa fa-caret"></span></li>
+		            <li class="sign-in">sign up <span class="fa fa-caret"></span></li>
+		        </ul>
+		        <!-- User area-->
+		    </nav>
+		    <!-- End navbar-->
 
+		    <!-- --> 
+		    <div id="userMenu" class="mega-dropper-hidden">
+		        <!-- --> 
+		        <div class="row">
+		        
+		            <!-- --> 
+		            <div class="mega-menu-column">
+		                <h1 class="nav-header">Account Settings</h1>
+		            </div>
+		            <!-- --> 
 
-
-
+		            <!-- --> 
+		            <div class="mega-menu-column">
+		                <ul>
+		                    <li><a href="#">Lorem ipsum</a></li>
+		                    <li><a href="#">Lorem ipsum</a></li>
+		                    <li><a href="#">Lorem ipsum</a></li>
+		                </ul>
+		            </div>
+		            <!-- --> 
+		            <div class="mega-menu-column">
+		                <ul>
+		                    <li><a href="#">Lorem ipsum</a></li>
+		                    <li><a href="#">Lorem ipsum</a></li>
+		                    <li><a href="#">Lorem ipsum</a></li>
+		                </ul>
+		            </div>
+		            <!-- --> 
+		        </div>
+		        <!-- --> 
+		     </div>
+		     <!-- --> 
+		</header>
+		<!-- End header-->

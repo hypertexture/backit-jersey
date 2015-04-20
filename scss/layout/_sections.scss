@@ -6,7 +6,7 @@
 $susy: (
 	columns: 12,
 	container: 1120px,
-	gutters: 1/4,
+	gutters: (1/4),
 	math: fluid,
 	output : float,
 	gutter-position : split,
@@ -28,13 +28,18 @@ $susy: (
 
 //backgrounds for each section
 .image-bg { 
-	background: url(../img/background-img-1.jpg) no-repeat center center; 
+	background: url(../img/background.jpg) no-repeat center center; 
 	background-size: cover;
-	height: 450px;
+	height: 500px;
 	width: 100%;
 	height: auto; 
 	position: relative;
 	z-index: 99;
+	color: #fff;
+
+	h1 {
+		color: #fff;
+	}
 
 	#overlay { 
 		position: absolute;

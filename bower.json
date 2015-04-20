@@ -1,0 +1,22 @@
+{
+  "name": "backit-jersey",
+  "version": "0.0.0",
+  "homepage": "https://github.com/hypertexture/backit-jersey",
+  "authors": [
+    "SteveQ88 <stevequinn88@gmail.com>"
+  ],
+  "description": "backit.je websites",
+  "main": "scripts.js",
+  "license": "MIT",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+    "susy": "~2.2.2",
+    "breakpoint-sass": "~2.5.0"
+  }
+}
